@@ -1,5 +1,8 @@
 # trojkat
 
+from copyreg import pickle
+
+
 a = 10
 b = 20
 c = 15
@@ -29,3 +32,13 @@ obwodprostokata = 2*a + 2*b
 poleprostokata = int(a*b)
 
 print("Obwod prostokata wynosi " + str(obwodprostokata) + ", zas pole wynosi " + str(poleprostokata) + ".")
+
+# kolo
+
+r = 4
+pi = 3.14
+
+obwodkola = 2*pi*r
+polekola = pi * r**2
+
+print("Obwod kola wynosi " + str(obwodkola) + ", zas pole wynosi " + str(polekola) + ".")
