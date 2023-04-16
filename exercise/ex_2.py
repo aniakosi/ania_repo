@@ -19,3 +19,13 @@ obwodrombu = 4*d
 polerombu = int(d*f)
 
 print("Obwod rombu wynosi " + str(obwodrombu) + ", zas pole wynosi " + str(polerombu) + ".")
+
+# prostokat
+
+a = 4
+b = 3
+
+obwodprostokata = 2*a + 2*b
+poleprostokata = int(a*b)
+
+print("Obwod prostokata wynosi " + str(obwodprostokata) + ", zas pole wynosi " + str(poleprostokata) + ".")
