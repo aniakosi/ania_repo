@@ -61,3 +61,23 @@ liczba_nawiasow_otwierajacych = ciag_znakow.count("(")
 # oczekiwany rezultat:
 # Liczba nawiasow otwierajacych wynosi: 4
 print("Liczba nawiasow otwierajacych wynosi: " + str(liczba_nawiasow_otwierajacych))
+
+
+# zadanie 1.7
+
+# posortuj alfabetycznie (od imienia) studentow
+studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
+studenci.sort()
+# oczekiwany rezultat:
+# Anna Szczesny
+# Barbara Kowalska
+# Jan Niezbedny
+# Tomasz Nijaki
+print("Alfabetyczna lista studentow wynosi: ")
+for student in studenci:
+    print(student)
+
+studenci.sort(key=lambda s: s.split()[1])
+print("Alfabetyczna lista studentow wg nazwiska wynosi: ")
+for student in studenci:
+    print(student)
