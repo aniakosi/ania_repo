@@ -77,6 +77,8 @@ print("Alfabetyczna lista studentow wynosi: ")
 for student in studenci:
     print(student)
 
+# posortuj alfabetycznie (od nazwiska) studentow
+studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
 studenci.sort(key=lambda s: s.split()[1])
 print("Alfabetyczna lista studentow wg nazwiska wynosi: ")
 for student in studenci:
