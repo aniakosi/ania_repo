@@ -10,9 +10,8 @@ print("{} {}".format(hello, student))
 
 
 # zadanie 1.2
-studentname = input("Wpisz swoje imie")
+studentname = input("Wpisz swoje imie ")
 
-print("Hello Ola")
 
 print("Hello {}".format(studentname))
 
@@ -76,7 +75,8 @@ studenci.sort()
 print("Alfabetyczna lista studentow wynosi: ")
 for student in studenci:
     print(student)
-
+    
+# zadanie 1.8
 # posortuj alfabetycznie (od nazwiska) studentow
 studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
 studenci.sort(key=lambda s: s.split()[1])
