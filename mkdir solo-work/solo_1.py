@@ -98,3 +98,53 @@ for i in studenci:
 iloscstudentownaN = a
 
 print("Liczba studentow na N wynosi: {}".format(a))
+
+
+# zadanie 1.10
+
+# zmienne poniezej preprezentuja ulozenie punktow na wykresie,
+# do zadania dolaczono takze rysunek pomocniczy
+wykres_1 = [[2, 4], [4, 4], [6, 4]]
+wykres_2 = [[2, 3], [4, 4], [6, 5]]
+wykres_3 = [[2, 3], [4, 3], [5, 4]]
+
+# zbadaj kazdy wykres, czy dla wyznaczonych punktow istnieje funkcja
+# liniowa laczaca punkty
+# jesli sie nie da, to zwroc False
+# jesli sie da, zwroc True
+
+
+#weryfikacja korelacji: (y1 - y2) * (x1 - x3) == (y1 - y3) * (x1 - x2);
+
+def WeryfikacjaLiniowosci(wspolrzedne: list):
+
+    # lewa strona rownania
+    a1 = (wspolrzedne[0][1]-wspolrzedne[1][1]) * (wspolrzedne[0][0]-wspolrzedne[2][0])
+
+    #prawa strona rownania
+    a2 = (wspolrzedne[0][1]-wspolrzedne[2][1]) * (wspolrzedne[0][0]-wspolrzedne[1][0])
+
+    if a1 == a2:
+        return True
+    else:
+        return False
+
+wykres_1_funkcja_liniowa= WeryfikacjaLiniowosci(wykres_1)
+wykres_2_funkcja_liniowa= WeryfikacjaLiniowosci(wykres_2)
+wykres_3_funkcja_liniowa= WeryfikacjaLiniowosci(wykres_3)
+
+
+if wykres_1_funkcja_liniowa:
+    print("Dla punktow w wykres_1 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_1 nie mozna wyznaczyc funkcji liniowej.")
+
+if wykres_2_funkcja_liniowa:
+    print("Dla punktow w wykres_2 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_2 nie mozna wyznaczyc funkcji liniowej.")
+
+if wykres_3_funkcja_liniowa:
+    print("Dla punktow w wykres_3 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_3 nie mozna wyznaczyc funkcji liniowej.")
