@@ -1,3 +1,4 @@
+#zadanie
 #trójkąt
 def trojkat(bok_a, bok_b, bok_c, h_a):
     pole = (bok_a * h_a)/2
